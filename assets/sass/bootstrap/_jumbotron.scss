@@ -1,0 +1,103 @@
+//
+// Jumbotron
+// --------------------------------------------------
+
+
+.jumbotron {
+  position: relative;
+  min-height: 350px;
+  padding-top:    70px;
+  padding-bottom: $jumbotron-padding;
+  margin-bottom: $jumbotron-padding;
+  color: $jumbotron-color;
+  background-image: url("http://via.placeholder.com/3800x1800");
+//  background-image: url("/assets/images/page-banners/hp-slide.jpg");
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+	
+	&.about-us {
+		background-image: url("http://via.placeholder.com/3800x1800");
+//		background-image: url("/assets/images/page-banners/about-bg.jpg");
+	}
+	&.rppt {
+		background-image: url("http://via.placeholder.com/3800x1800");
+//		background-image: url("/assets/images/page-banners/rppt-bg.jpg");
+	}
+	&.massage {
+		background-image: url("http://via.placeholder.com/3800x1800");
+//		background-image: url("/assets/images/page-banners/massage-bg.jpg");
+	}
+	&.acupuncture {
+		background-image: url("http://via.placeholder.com/3800x1800");
+//		background-image: url("/assets/images/page-banners/acupuncture-bg.jpg");
+	}
+	&.mental {
+		background-image: url("http://via.placeholder.com/3800x1800");
+//		background-image: url("/assets/images/page-banners/mental-bg.jpg");
+	}
+	&.for-clients { 
+		background-image: url("http://via.placeholder.com/3800x1800");
+//		background-image: url("/assets/images/page-banners/clients-bg.jpg");
+	}
+	&.appointment {
+		background-image: url("http://via.placeholder.com/3800x1800");
+//		background-image: url("/assets/images/page-banners/appointment-bg.jpg");
+	}
+	&.contact {
+		background-image: url("http://via.placeholder.com/3800x1800");
+//		background-image: url("/assets/images/page-banners/contact-bg.jpg");
+	}
+	&.join {
+		background-image: url("http://via.placeholder.com/3800x1800");
+//		background-image: url("/assets/images/page-banners/contact-bg.jpg");
+	}
+
+  h1,
+  .h1 {
+	position: absolute;
+    color: $jumbotron-heading-color;
+	font-size: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	z-index: 1;
+  }
+
+  p {
+    margin-bottom: ($jumbotron-padding / 2);
+    font-size: $jumbotron-font-size;
+    font-weight: 200;
+  }
+
+  > hr {
+    border-top-color: darken($jumbotron-bg, 10%);
+  }
+
+  .container &,
+  .container-fluid & {
+    border-radius: $border-radius-large; // Only round corners at higher resolutions if contained in a container
+    padding-left:  ($grid-gutter-width / 2);
+    padding-right: ($grid-gutter-width / 2);
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: $screen-sm-min) {
+    padding-top:    68px;
+    padding-bottom: ($jumbotron-padding * 1.6);
+
+    .container &,
+    .container-fluid & {
+      padding-left:  ($jumbotron-padding * 2);
+      padding-right: ($jumbotron-padding * 2);
+    }
+
+    h1,
+    .h1 {
+      font-size: $jumbotron-heading-font-size;
+    }
+  }
+}
