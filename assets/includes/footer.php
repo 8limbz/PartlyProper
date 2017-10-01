@@ -1,30 +1,31 @@
 <!-- Footer -->
 <footer>
 	<section id="footer">  
-  		<div class="footer navbar-default">
-      		<div class="container">
-      
-    		</div>
-  		</div>
+  		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+				  <ul class="text-center list-unstyled list-inline small">
+					<li class="pull-left"><?php auto_copyright();?> Partly Proper</li>
+					<li class="pull-right"><a href="/privacy_policy">Privacy Policy</a></li>
+					<li class="pull-right"><a href="/terms_conditions">Terms &amp; Conditions</a></li>
+				  </ul>
+				</div>
+			</div>
+		 </div>
 	</section>
 </footer>
-<div class="copyright">
-	<div class="container">
-	  <div class="row">
-		<div class="col-sm-12">
-		  <ul class="text-center list-unstyled list-inline small">
-			<li class="pull-left"><?php auto_copyright();?> Partly Proper</li>
-			  <li class="pull-right"><a href="/privacy_policy">Privacy Policy</a></li>
-			  <li class="pull-right"><a href="/terms_conditions">Terms &amp; Conditions</a></li>
-		  </ul>
-		</div>
-    </div>
-  </div>
-</div>
 
 <!--Bootstrap JS-->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="/assets/js/bootstrap.min.js"></script>
+<!--Smooth Scroll-->
+<script>$(document).on('click', 'a', function(event){
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+});</script>
 
 <?php 
 // No argument required for current year.
